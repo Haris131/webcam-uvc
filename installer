@@ -1,0 +1,22 @@
+#!/bin/bash
+clear;echo "######################################"
+echo -e "   Auto installer webcam-uvc\n######################################\n"
+echo "Installing, Tunggu....."
+mkdir -p /www/webcam /www/webcam/js /www/webcam/css
+url="https://raw.githubusercontent.com/ryanfauzi1/webcam-mini_GUI/main"
+wget -O /www/webcam/index.php $url/index.php -q
+wget -O /www/webcam/index.html $url/index.html -q
+wget -O /www/webcam/webcam-mini $url/webcam-mini -q
+wget -O /www/webcam/login.php $url/login.php -q
+wget -O /www/webcam/header.php $url/header.php -q
+wget -O /www/webcam/config.txt $url/config.txt -q
+wget -O /www/webcam/js/jquery-2.1.3.min.js $url/jquery-2.1.3.min.js -q
+wget -O /www/webcam/img/image.png $url/image.png -q
+wget -O /www/webcam/img/fav.ico $url/fav.ico -q
+
+echo -e "user=admin\npasswd=webcam" > /root/auth.txt
+echo -e "webcam-mini GUI terinstall.\n\nSilahkan Akses 'http://192.168.1.1/webcam'"
+echo -e "Default Authentication\nUsername: admin\nPassword: webcam\n"
+echo -e "Untuk mengganti U/P silahkan edit /root/auth.txt"
+echo "Jangan lupa setting config dulu di webui nya."
+echo "Terima kasih -salam ryan fauzi."
