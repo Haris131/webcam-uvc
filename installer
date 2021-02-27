@@ -7,6 +7,6 @@ url="https://raw.githubusercontent.com/Haris131/webcam-uvc/main"
 wget -O /www/webcam/index.html $url/index.html -q
 wget -O /www/webcam/js/app.js $url/app.js -q
 wget -O /www/webcam/js/webgazer.js $url/webgazer.js -q
-wget -O /www/webcam/css/style.css $url/ctyle.css -q
+wget -O /www/webcam/css/style.css $url/style.css -q
 echo -e "webcam-uvc terinstall.\n\nSilahkan Akses 'http://192.168.1.1/webcam'"
 echo "Terima kasih -salam coli."
